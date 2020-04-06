@@ -1,0 +1,36 @@
+<div class="row">
+    <div class="col-lg-1 col-1">
+    </div>
+    <div class="col-lg-4 col-2">
+        <app-formulario-derecha [recibirModificacion]="datosModificar" (enviarDatos)="rellenarDatos($event)"> </app-formulario-derecha>
+    </div>
+    <div class="col-lg-1 col-1"></div>
+    <div class="col-lg-5 col-2">
+        <app-tabla-izquierda [entradaLista]="datosFormularioDerecha" [entradaLista]="datoRestablecer" (enviarBasura)="basuraDatos($event)" (modifyDatos)="modificarDatos($event)">
+        </app-tabla-izquierda>
+    </div>
+    <div class="col-lg-1 col-1"></div>
+</div>
+<div class="row">
+    <div class="col-lg-1 col-1">
+    </div>
+    <div class="col-lg-10 col-8">
+        <app-basurero-bajo-izquierda [basuraLista]="datosBasura" (datoRestablecido)="datoRestablecido($event)"></app-basurero-bajo-izquierda>
+    </div>
+    <div class="col-lg-1 col-1">
+    </div>
+</div>
+<div class="row">
+    <div class="col-lg-5 col-2"></div>
+    <div class="col-lg-2 col-3">
+        <h1><span class="badge badge-secondary">Gráfico General</span></h1>
+    </div>
+    <div class="col-lg-5 col-2"></div>
+</div>
+<div class="row">
+    <div class="col-lg-1 col-2"></div>
+    <div class="col-lg-10 col-8">
+        <app-my-line-chart></app-my-line-chart>
+    </div>
+    <div class="col-lg-1 col-2"></div>
+</div>

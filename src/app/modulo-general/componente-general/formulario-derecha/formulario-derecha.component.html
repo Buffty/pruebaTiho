@@ -1,0 +1,17 @@
+<div class="form-group bg-dark col-lg-12 col-12">
+    <h2 class="text-center"><span class="badge badge-secondary">Formulario</span></h2>
+    <div [formGroup]="formularioGrupo" class="p-4 m-1 text-center">
+        <input class="mb-1" type="text" name="Firm" formControlName="firm" [placeholder]="ejemploFirmHolder" />
+        <br>
+        <input class="mb-1" type="text" name="Org" formControlName="org" [placeholder]="ejemploOrgHolder" />
+        <br>
+        <input class="mb-1" type="text" name="Lob" formControlName="lob" [placeholder]="ejemploLobHolder" />
+        <br>
+        <input class="mb-1" type="text" name="Sub_lob" formControlName="sub_lob" [placeholder]="ejemploSub_LobHolder" />
+        <br>
+        <input class="mb-1" type="text" name="Bussines_plan" formControlName="bussines_plan" [placeholder]="ejemploBussines_Plan_Holder" />
+        <br>
+        <input class="mb-1" type="text" name="Bussines_component" formControlName="bussines_component" [placeholder]="ejemploBussines_Component_Holder" />
+        <button type="button" (click)="enviarFormulario()" class="m-2 btn btn-outline-light btn-block">Añadir</button>
+    </div>
+</div>
